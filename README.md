@@ -13,8 +13,9 @@ Make a weapon model replace any weapon in game!
 
 ![The lines you need to edit in config.ini](/assets/weaponsintheconfigfile.png) (edit these 4 lines)
 
-2. Drag the folder containing your modded weapons onto NAWCT.py
+2. Drag the folder (or folder of folders) containing your modded weapons onto NAWCT.py
     1. The tool works recursively, if the dat/dtt is anywhere inside the folder you dragged, it will convert it.
+![gif of me dragging mods onto the script](/assets/giffornawct.gif)
 3.The converted files will exported next to the original dtt/dat files.
 
 ## FAQ but just the answers
