@@ -10,7 +10,9 @@ Make a weapon model replace any weapon in game!
 
 ## how to use the thing:
 1. Replace the weapon IDs in config.ini with the weapon you would like the mod to replace. (Don't forget to save the .ini file.) (Default is Virtuous weapons)
-![The lines you need to edit in config.ini](/assets/weaponsintheconfigfile.png)
+
+![The lines you need to edit in config.ini](/assets/weaponsintheconfigfile.png) (edit these 4 lines)
+
 3. Drag the folder containing your modded weapons onto NAWCT.py
     1. The tool works recursively, if the dat/dtt is anywhere inside the folder you dragged, it will convert it.
 4.The converted files will exported next to the original dtt/dat files.
