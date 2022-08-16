@@ -1,5 +1,7 @@
-# Nier-Automata-Weapon-Conversion-Tool
-Converts a weapon mod's base weapon.
+# NieR Automata Weapon Conversion Tool
+
+Make a weapon model replace any weapon in game!
+
 
 ## Stuff you need to be able to use the tool:
 - Python 3
@@ -8,10 +10,9 @@ Converts a weapon mod's base weapon.
 
 ## how to use the thing:
 1. Replace the weapon IDs in config.ini with the weapon you would like the mod to replace. (Don't forget to save the .ini file.) (Default is Virtuous weapons)
-![The lines you need to edit in the config file.](/assets/weaponsintheconfigfile.png)
-3. Drag the folder containing your modded weapons onto NAWCT.py
+2. Drag the folder containing your modded weapons onto NAWCT.py
     1. The tool works recursively, if the dat/dtt is anywhere inside the folder you dragged, it will convert it.
-4.The converted files will exported next to the original dtt/dat files.
+3.The converted files will exported next to the original dtt/dat files.
 
 ## FAQ but just the answers
 - You cannot convert between categories. 
