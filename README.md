@@ -2,11 +2,7 @@
 
 Make a weapon model replace any weapon in game!
 
-# Video Tutorial
-
-[NAWCT Tutorial](https://youtu.be/eP58KMZsqKI)
-
-# Text Tutorial
+# [NAWCT Video Tutorial](https://youtu.be/eP58KMZsqKI)
 
 ## Stuff you need to be able to use the tool:
 - Python 3
