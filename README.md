@@ -4,7 +4,7 @@ Make a weapon model replace any weapon in game!
 
 # Video Tutorial
 
-[![NAWCT Tutorial](https://res.cloudinary.com/marcomontalbano/image/upload/v1660839529/video_to_markdown/images/youtube--eP58KMZsqKI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/eP58KMZsqKI "NAWCT Tutorial")
+[NAWCT Tutorial](https://youtu.be/eP58KMZsqKI)
 
 # Text Tutorial
 
