@@ -1,4 +1,4 @@
-#hi hello 😊
+#hi hello :)
 import datData as dd
 import os
 import sys
@@ -47,10 +47,33 @@ def swapDat(target, mod):
 def swapDtt(target, mod):
     targetData = dd.DatData(target)
     modData = dd.DatData(mod)
-    for i, name in enumerate(modData.fileNames):
+    targetWMBindex = -1
+    targetWTPindex = -1
+    for i, name in enumerate(targetData.fileNames):
         extName = name.decode("utf-8").split(".")[1][:3]
-        if extName in ["wmb", "wtp"]:
-            targetData.files[i] = modData.files[i]
+        if extName == "wmb":
+            targetWMBindex = i
+        if extName == "wtp":
+            targetWTPindex = i
+
+    #check if we got the suspects
+    if targetWMBindex == -1:
+        print("where the fucking wmb")
+    if targetWTPindex == -1:
+        print("where the fucking wtp")
+
+
+
+    for i, name in enumerate(modData.fileNames):
+        # print(i,name)
+        extName = name.decode("utf-8").split(".")[1][:3]
+        if extName == "wmb":
+            targetData.files[targetWMBindex] = modData.files[i]
+        if extName == "wtp":
+            targetData.files[targetWTPindex] = modData.files[i]
+        
+        # if extName in ["wmb", "wtp"]:
+        #     targetData.files[i] = modData.files[i]
     targetData.shitaDat(os.path.join(os.path.dirname(mod), os.path.basename(target)))
     
 if __name__ == '__main__':
@@ -64,6 +87,8 @@ if __name__ == '__main__':
                     extensionless = file.split(".")[0]
                     extension = os.path.splitext(file)[1]
                     for i in range(4):
+                        if extensionless == inputWeapons[i]:
+                            continue
                         if extensionless in sortedWeapons[i]:
                             if extension ==  ".dat":
                                 swapDat(os.path.join(targetPath, inputWeapons[i]+".dat"), os.path.join(root, file))
